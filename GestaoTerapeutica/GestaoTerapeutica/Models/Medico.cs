@@ -1,15 +1,17 @@
 ﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace GestaoTerapeutica.Models
 {
-    class Medico
+    public class Medico
     {
         public Medico()
         {
             this.Reservas = new HashSet<ReservaFarmaco>();
         }
 
-        public int NumOrdem { get; set; }
+        [Key]
+        public int DocId { get; set; }
         public string NomeDoc { get; set; }
         public string Especialidade { get; set; }
 

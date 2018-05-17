@@ -1,14 +1,16 @@
 ﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace GestaoTerapeutica.Models
 {
-    class Funcionario
+    public class Funcionario
     {
         public Funcionario()
         {
             this.Reservas = new HashSet<ReservaFarmaco>(); 
         }
-        public int NumFunc { get; set; }
+        [Key]
+        public int FuncId { get; set; }
         public string NomeFunc { get; set; }
 
         public virtual ICollection<ReservaFarmaco> Reservas { get; set; }

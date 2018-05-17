@@ -1,10 +1,12 @@
 ﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace GestaoTerapeutica.Models
 {
-    class Farmacia
+    public class Farmacia
     {
-        public int CodFarmacia { get; set; }
+        [Key]
+        public int FarmaciaId { get; set; }
         public string NomeFarm { get; set; }
         public virtual ICollection<ReservaFarmaco> Reservas { get; set; }
     }
