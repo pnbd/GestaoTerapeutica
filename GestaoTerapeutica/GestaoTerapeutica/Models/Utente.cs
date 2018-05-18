@@ -1,23 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace GestaoTerapeutica.Models
 {
-    class Utente
+    public class Utente
     {
-        public Utente()
-        {
-            this.Directores = new HashSet<Direccao>();
-        }
-
-        public int NumUtente { get; set; }
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int UtenteId { get; set; }
+        public string Nome { get; set; }
         public DateTime DataNascimento { get; set; }
-        public Patologia Patologias { get; set; }
-        public virtual ICollection<Direccao> Directores { get; set; }
+        public ICollection<Patologia> Patologias { get; set; }
         public virtual ICollection<ReservaFarmaco> Reservas { get; set; }
     }
 
-    class Patologia
+    public class Patologia
     {
         public int IdPatologia { get; set; }
         public string NomePatologia { get; set; }

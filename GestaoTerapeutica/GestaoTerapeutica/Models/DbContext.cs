@@ -11,7 +11,6 @@ namespace GestaoTerapeutica.Models
         public MedsLarContext() : base("MedsLarConnectionString")
         { }
 
-        public virtual DbSet<Direccao> Directores { get; set; }
         public virtual DbSet<Utente> Utentes { get; set; }
         public virtual DbSet<ReservaFarmaco> Reservas { get; set; }
         public virtual DbSet<Farmacia> Farmacias { get; set; }
