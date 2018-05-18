@@ -1,18 +1,16 @@
 ﻿using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace GestaoTerapeutica.Models
 {
-    public class ReservaFarmaco
+    class ReservaFarmaco
     {
         public ReservaFarmaco()
         {
             this.Funcionarios = new HashSet<Funcionario>();
             this.Medicos = new HashSet<Medico>();
         }
-        [Key]
-        public int ReservaId { get; set; }
+        public int IdReserva { get; set; }
         //Código Nacional do Produto
         public int CNP { get; set; }
         public string LinkRCM { get; set; }
