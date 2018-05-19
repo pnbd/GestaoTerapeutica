@@ -6,8 +6,8 @@ namespace GestaoTerapeutica.Models
 {
     public class Farmacia
     {
+        //Numero de Identificação da Farmácia, Utilizar nº ANF
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int FarmId { get; set; }
         public string NomeFarm { get; set; }
         public string MoradaRua { get; set; }
