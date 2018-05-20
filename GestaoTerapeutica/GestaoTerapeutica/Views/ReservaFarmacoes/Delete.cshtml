@@ -1,0 +1,112 @@
+﻿@model GestaoTerapeutica.Models.ReservaFarmaco
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>ReservaFarmaco</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Farmacia.NomeFarm)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Farmacia.NomeFarm)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Utente.Nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Utente.Nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CNP)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CNP)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SubstAct)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SubstAct)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FormaFarm)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FormaFarm)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Dose)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Dose)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LinkRCM)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LinkRCM)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PosologiaDia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PosologiaDia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PosologiaSemana)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PosologiaSemana)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PosologiaMes)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PosologiaMes)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CompExistentes)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CompExistentes)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

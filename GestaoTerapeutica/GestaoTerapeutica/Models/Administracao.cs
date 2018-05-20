@@ -15,11 +15,11 @@ namespace GestaoTerapeutica.Models
         public DateTime DataAdmin { get; set; }
 
         [ForeignKey("Funcionario")]
-        public int FuncId { get; set; }
+        public int FuncFk { get; set; }
         public virtual Funcionario Funcionario { get; set; }
 
         [ForeignKey("ReservaFarmaco")]
-        public int ReservaId { get; set; }
+        public int ReservaFk { get; set; }
         public virtual ReservaFarmaco ReservaFarmaco { get; set; }
         
     }

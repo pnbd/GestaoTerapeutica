@@ -1,0 +1,93 @@
+﻿@model IEnumerable<GestaoTerapeutica.Models.ReservaFarmaco>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Farmacia.NomeFarm)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Utente.Nome)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CNP)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SubstAct)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FormaFarm)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Dose)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LinkRCM)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PosologiaDia)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PosologiaSemana)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PosologiaMes)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CompExistentes)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Farmacia.NomeFarm)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Utente.Nome)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CNP)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SubstAct)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FormaFarm)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Dose)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LinkRCM)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PosologiaDia)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PosologiaSemana)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PosologiaMes)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CompExistentes)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ReservaId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ReservaId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ReservaId })
+        </td>
+    </tr>
+}
+
+</table>

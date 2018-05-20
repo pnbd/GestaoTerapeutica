@@ -17,6 +17,12 @@ namespace GestaoTerapeutica.Models
         public int ReservaId { get; set; }
         //Código Nacional do Produto
         public int CNP { get; set; }
+        //Substância Activa
+        public string SubstAct { get; set; }
+        //Forma Farmaceutica
+        public string FormaFarm { get; set; }
+        //Dosagem
+        public string Dose { get; set; }
         //URL para o Resumo das Características do Medicamento
         public string LinkRCM { get; set; }
         //Numero de tomas diárias
@@ -26,7 +32,7 @@ namespace GestaoTerapeutica.Models
         //Numero de tomas Mensais
         public float PosologiaMes { get; set; }
         //Existências de comprimidos
-        public float CompRestantes { get; set; }
+        public float CompExistentes { get; set; }
 
         public virtual ICollection<Medico> Medicos { get; set; }
         public virtual ICollection<Administracao> Administracoes { get; set; }

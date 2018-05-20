@@ -1,0 +1,106 @@
+﻿@model GestaoTerapeutica.Models.ReservaFarmaco
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ReservaFarmaco</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Farmacia.NomeFarm)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Farmacia.NomeFarm)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Utente.Nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Utente.Nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CNP)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CNP)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SubstAct)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SubstAct)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FormaFarm)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FormaFarm)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Dose)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Dose)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LinkRCM)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LinkRCM)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PosologiaDia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PosologiaDia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PosologiaSemana)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PosologiaSemana)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PosologiaMes)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PosologiaMes)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CompExistentes)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CompExistentes)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ReservaId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
