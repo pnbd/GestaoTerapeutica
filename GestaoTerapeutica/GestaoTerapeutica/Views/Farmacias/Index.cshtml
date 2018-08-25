@@ -1,0 +1,63 @@
+﻿@model IEnumerable<GestaoTerapeutica.Models.Farmacia>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.NomeFarm)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MoradaRua)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MoradaAndar)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MoradaCodPost)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ContactoTelefone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ContactoMail)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.NomeFarm)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MoradaRua)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MoradaAndar)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MoradaCodPost)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ContactoTelefone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ContactoMail)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.FarmId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.FarmId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.FarmId })
+        </td>
+    </tr>
+}
+
+</table>

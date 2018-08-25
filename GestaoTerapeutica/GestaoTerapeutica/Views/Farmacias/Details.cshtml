@@ -1,0 +1,66 @@
+﻿@model GestaoTerapeutica.Models.Farmacia
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Farmacia</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NomeFarm)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NomeFarm)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MoradaRua)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MoradaRua)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MoradaAndar)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MoradaAndar)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MoradaCodPost)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MoradaCodPost)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ContactoTelefone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ContactoTelefone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ContactoMail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ContactoMail)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.FarmId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

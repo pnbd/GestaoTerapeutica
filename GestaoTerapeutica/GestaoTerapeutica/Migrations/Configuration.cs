@@ -9,6 +9,7 @@ namespace GestaoTerapeutica.Migrations
 
     internal sealed class Configuration : DbMigrationsConfiguration<GestaoTerapeutica.Models.MedsLarDb>
     {
+        
         public Configuration()
         {
             AutomaticMigrationsEnabled = true;

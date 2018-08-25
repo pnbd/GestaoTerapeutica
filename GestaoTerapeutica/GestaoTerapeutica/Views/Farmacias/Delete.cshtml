@@ -1,0 +1,72 @@
+﻿@model GestaoTerapeutica.Models.Farmacia
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Farmacia</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NomeFarm)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NomeFarm)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MoradaRua)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MoradaRua)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MoradaAndar)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MoradaAndar)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MoradaCodPost)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MoradaCodPost)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ContactoTelefone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ContactoTelefone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ContactoMail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ContactoMail)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

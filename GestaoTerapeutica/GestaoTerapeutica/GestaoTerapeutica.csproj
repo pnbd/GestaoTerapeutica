@@ -158,6 +158,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PatologiasController.cs" />
     <Compile Include="Controllers\ReservaFarmacoesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -172,6 +173,11 @@
     <Compile Include="Models\ReservaFarmaco.cs" />
     <Compile Include="Models\Utente.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Controllers\AdministracaosController.cs" />
+    <Compile Include="Controllers\FarmaciasController.cs" />
+    <Compile Include="Controllers\FuncionariosController.cs" />
+    <Compile Include="Controllers\MedicosController.cs" />
+    <Compile Include="Controllers\UtentesController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
@@ -190,6 +196,36 @@
     <Content Include="Views\ReservaFarmacoes\Details.cshtml" />
     <Content Include="Views\ReservaFarmacoes\Edit.cshtml" />
     <Content Include="Views\ReservaFarmacoes\Index.cshtml" />
+    <Content Include="Views\Patologias\Create.cshtml" />
+    <Content Include="Views\Patologias\Delete.cshtml" />
+    <Content Include="Views\Patologias\Details.cshtml" />
+    <Content Include="Views\Patologias\Edit.cshtml" />
+    <Content Include="Views\Patologias\Index.cshtml" />
+    <Content Include="Views\Administracaos\Create.cshtml" />
+    <Content Include="Views\Administracaos\Delete.cshtml" />
+    <Content Include="Views\Administracaos\Details.cshtml" />
+    <Content Include="Views\Administracaos\Edit.cshtml" />
+    <Content Include="Views\Administracaos\Index.cshtml" />
+    <Content Include="Views\Farmacias\Create.cshtml" />
+    <Content Include="Views\Farmacias\Delete.cshtml" />
+    <Content Include="Views\Farmacias\Details.cshtml" />
+    <Content Include="Views\Farmacias\Edit.cshtml" />
+    <Content Include="Views\Farmacias\Index.cshtml" />
+    <Content Include="Views\Funcionarios\Create.cshtml" />
+    <Content Include="Views\Funcionarios\Delete.cshtml" />
+    <Content Include="Views\Funcionarios\Details.cshtml" />
+    <Content Include="Views\Funcionarios\Edit.cshtml" />
+    <Content Include="Views\Funcionarios\Index.cshtml" />
+    <Content Include="Views\Medicos\Create.cshtml" />
+    <Content Include="Views\Medicos\Delete.cshtml" />
+    <Content Include="Views\Medicos\Details.cshtml" />
+    <Content Include="Views\Medicos\Edit.cshtml" />
+    <Content Include="Views\Medicos\Index.cshtml" />
+    <Content Include="Views\Utentes\Create.cshtml" />
+    <Content Include="Views\Utentes\Delete.cshtml" />
+    <Content Include="Views\Utentes\Details.cshtml" />
+    <Content Include="Views\Utentes\Edit.cshtml" />
+    <Content Include="Views\Utentes\Index.cshtml" />
     <None Include="_bin_deployableAssemblies\x86\sqlcese40.dll" />
     <None Include="_bin_deployableAssemblies\x86\sqlceqp40.dll" />
     <None Include="_bin_deployableAssemblies\x86\sqlceme40.dll" />

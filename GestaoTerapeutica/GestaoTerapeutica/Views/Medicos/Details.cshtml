@@ -1,0 +1,50 @@
+﻿@model GestaoTerapeutica.Models.Medico
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Medico</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NomeDoc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NomeDoc)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Especialidade)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Especialidade)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ContactoTelef)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ContactoTelef)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ContactoMail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ContactoMail)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.NumOrdem }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
